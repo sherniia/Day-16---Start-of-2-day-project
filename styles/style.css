@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+:root {
+  --primary-color: #79589f;
+  --secondary-color: #6e5baa;
+  --dark-color: #260040;
+  --light-color: #f4f4f4;
+  --shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  --text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* To align one line or one section, FLEX is really fast and easy to use. */
+
+/* GRID is very useful when you have multiple elements in the section, or have many sections to re-order. */
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Showcase */
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid var(--dark-color);
+  width: 100%;
+  padding: 3px;
+  font-size: 1.1rem;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+/* Below is what slants the purple color */
+
+.showcase:after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  bottom: -30px;
+  background-color: var(--primary-color);
+  right: 0;
+  left: 0;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+/* STATS */
+
+.stats {
+  margin-top: 100px;
+}
+
+/* CLI */
+
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+/* above is how you affect only the first child inside those classes */
+
+/* cloud */
+
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+.languages .flex {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.languages .card {
+  transition: transform 0.2s ease-in;
+}
+.languages .card:hover {
+  transform: translateY(-15px);
+}
+
+.languages h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* footer */
+
+.footer .grid3 {
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.footer .social a {
+  margin: 0, 10px;
+}
+
+
+
