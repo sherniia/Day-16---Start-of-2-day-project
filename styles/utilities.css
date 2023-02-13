@@ -91,6 +91,31 @@
     color: var(--text-color);
 }
 
+.showcase_feature {
+    height: 250px;
+    background-color: var(--primary-color);
+    color:var(--light-color);
+    position: relative;
+
+}
+
+.showcase_feature h1 {
+    font-size: 45px;
+  }
+  
+  .showcase_feature p {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  
+  .showcase_feature .grid {
+    grid-template-columns: 50% 30%;
+    justify-content: space-between;
+  }
+
+.showcase_feature img {
+    width: 90%;
+}
 
 /* margins */
 
@@ -192,11 +217,14 @@
     color: var(--light-color)
 }
 
+
 @media screen and (max-width: 768px) 
    {
     .grid,
     .showcase .grid, .stats .grid,
-    .cloud .grid {
+    .cloud .grid,
+    .install .grid
+    {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
     }
@@ -216,4 +244,12 @@
     .showcase-text {
         text-align: center;
     }
+
+    .boxes {
+        grid-template-columns: 1fr;
+    }
+    .box1, .box2, .box3, .box4, .box5, .box6 {
+        grid-column: 1 / span 3;
+    }
+
   }

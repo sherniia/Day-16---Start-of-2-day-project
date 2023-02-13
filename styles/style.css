@@ -150,13 +150,104 @@ img {
 
 /* footer */
 
-.footer .grid3 {
-  grid-template-columns: 1fr 1fr 2fr;
+.footer .grid-3 {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer .social a {
-  margin: 0, 10px;
+.footer a {
+  margin: 0 10px;
 }
 
 
 
+/* FEATURE */
+
+/* Platform */
+
+.platform .grid {
+  grid-template-columns:50% 40%;
+  justify-content: space-between;
+}
+
+.platform-text h2 {
+    font-size: 30px;
+}
+
+
+/* server */
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 20px;
+}
+
+.boxes .box1 {
+  grid-column: 1 / span 3;
+}
+
+ .box2 {
+  grid-column: 1 / span 2;
+}
+
+.boxes .flex {
+  justify-content: space-between;
+  
+}
+
+.boxes i {
+  margin-right: 15px;
+}
+
+.server .card {
+  margin: 0 40px;
+}
+
+
+/* Docs */
+
+/* Installation */
+
+.install .grid {
+  grid-template-columns: 1fr 7fr;
+  align-items: start;
+  gap: 40px;
+}
+
+.doc-links {
+  font-size: large;
+}
+.doc-links li {
+  border-bottom: rgb(215, 215, 215) solid 1px;
+  line-height: 2;
+}
+.doc-links a {
+  color: grey;
+}
+
+.doc-links a:hover {
+  color: var(--text-color);
+}
+
+.report .alert {
+  background-color: rgb(1, 201, 51);
+  color: white;
+}
+
+.alert i {
+  margin: 0 10px;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  padding: 0;
+}
+
+code, pre {
+  background-color: var(--text-color);
+  color: white;
+  padding:10px;
+
+}
