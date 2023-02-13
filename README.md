@@ -1,0 +1,1 @@
+# Seytech installation demo pages
